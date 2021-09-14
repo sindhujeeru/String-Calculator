@@ -41,6 +41,10 @@ public class StringCalculator {
 				}
 			}
 			
+			if(numInteger > 1000) {
+				numInteger = 0;
+			}
+			
 			sum = sum+numInteger;
 		}
 		

@@ -59,5 +59,10 @@ public class StringCalculatorTest {
 		}
 	}
 	
+	@Test
+	public void testNumberAbove1000() {
+		assertEquals(5, StringCalculator.add("5,1001"));
+	}
+	
 
 }
