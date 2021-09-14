@@ -64,5 +64,11 @@ public class StringCalculatorTest {
 		assertEquals(5, StringCalculator.add("5,1001"));
 	}
 	
+	
+	@Test
+	public void testDelimitersOfLength() {
+		assertEquals(6, StringCalculator.add("//;;;\n1;;;2;;;3"));
+	}
+	
 
 }
