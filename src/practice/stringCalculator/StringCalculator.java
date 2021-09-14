@@ -8,7 +8,10 @@ public class StringCalculator {
 		}else {
 			String delimiter = ",";
 			String[] numbersArray = splitNumbers(numbers, delimiter+"|\n");
-			
+			if(numbers.matches("//(.*)\n(.*)")) {
+				delimiter = numbers.substring(2,numbers.indexOf("\n"));
+				numbers = numbers.substring(numbers.indexOf("\n")+1);
+			}
 			return sum(numbersArray);
 		}
 		
